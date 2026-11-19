@@ -1,4 +1,5 @@
 -- archived
+
 --!native
 --!optimize 2
 --!divine-intellect
@@ -82,13 +83,9 @@ end
 
 local global_container
 do
-	local filename = "UniversalMethodFinder"
-
+ 
 	local finder
-	finder, global_container = loadstring(
-		game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
-		filename
-	)()
+	finder, global_container = loadstring(game:HttpGet("https://raw.githubusercontent.com/Iordverity/skibidi-save-instance/refs/heads/main/skibidimethodfinder", true))()
 
 	finder({
 		-- readbinarystring = 'string.find(...,"bin",nil,true)', -- ! Could match some unwanted stuff (getbinaryindex)
@@ -3484,3 +3481,4 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 end
 
 return synsaveinstance
+ 
